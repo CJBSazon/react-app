@@ -1,33 +1,24 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="fixed w-full top-0 bg-orange-400">
-      <Container className="flex justify-between items-center">
-      <Navbar.Brand href="#home" className="lg:hidden md:flex justify-center justify-center">
-            <img className="w-16 rounded-full " src="/src/assets/img/logo.jpg" alt="Mabsi Soy" />
-          </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="w-full flex justify-between items-center">
-          <Nav className="flex space-x-6">
-            <Nav.Link href="#home" className="text-white text-base ">Home</Nav.Link>
-            <Nav.Link href="#services" className="text-white text-base ">Services</Nav.Link>
-            <Nav.Link href="#about" className="text-white text-base ">About</Nav.Link>
-            <Nav.Link href="#menu" className="text-white text-base ">Menu</Nav.Link>
-          </Nav>
-          <Navbar.Brand href="#home" className="lg:flex justify-center justify-center md:hidden">
-            <img className="w-16 rounded-full " src="/src/assets/img/logo.jpg" alt="Mabsi Soy" />
-          </Navbar.Brand>
-          <Nav className="flex space-x-4">
-            <Button variant="light" href="#sign-in" className="text-black">Sign In</Button>
-            <Button variant="dark" href="#sign-up">Sign Up</Button>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="bg-orange-500">
+      <div className="container mx-auto flex justify-between items-center py-4">
+        <a href="#home" className="text-2xl font-bold">
+          <img className="w-16 rounded-full" src="/src/assets/img/logo.jpg" alt="Mabsi Soy" />
+        </a>
+        <div className="hidden md:flex space-x-8">
+          <a href="#home" className="text-white text-base font-bold">Home</a>
+          <a href="#services" className="text-white text-base font-bold">Services</a>
+          <a href="#about" className="text-white text-base font-bold">About</a>
+          <a href="#menu" className="text-white text-base font-bold">Menu</a>
+        </div>
+        <div className="hidden md:flex space-x-4">
+          <a href="#sign-in" className="bg-white text-black px-4 py-2 rounded-md">Sign In</a>
+          <a href="#sign-up" className="bg-black text-white px-4 py-2 rounded-md">Sign Up</a>
+        </div>
+      </div>
+    </nav>
   );
 }
 

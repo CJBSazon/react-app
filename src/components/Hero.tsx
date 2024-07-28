@@ -4,14 +4,17 @@ function Hero () {
     return (
         <div>
             {/* Hero Section */}
-            <section className="flex flex-col items-center justify-center pt-24 bg-cover bg-center" style={{ backgroundImage: "url('/src/assets/img/bg home.jpg')", height: "500px" }}>
+            <div className="flex justify-center items-center h-screen bg-cover bg-center" style={{ backgroundImage: "url('/src/assets/img/bg home.jpg')" }}>
+            <div className="text-center">
                 <h1 className="text-5xl text-red-500 font-bold mt-10">MABSI SOY</h1>
                 <p className="text-3xl text-red-600 mt-4">PEKA MANYAMAN SILOG KENI SASMUAN</p>
                 <div className="mt-8 space-x-4">
                 <button className="bg-black text-white px-6 py-3 rounded-md">ORDER NOW!</button>
-                <button className="bg-black text-white px-6 py-3 rounded-md mb-10">RESERVE NOW!</button>
+                <button className="bg-black text-white px-6 py-3 rounded-md">RESERVE NOW!</button>
                 </div>
-            </section>
+            </div>
+            </div>
+
             {/* Menu Section */}
             <section className="container mx-auto mt-10">
             <h2 className="text-4xl text-red-500 text-center">MENU</h2>
