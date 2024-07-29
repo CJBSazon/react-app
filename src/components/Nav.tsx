@@ -2,7 +2,7 @@ import React from 'react';
 
 function BasicExample() {
   return (
-    <nav className="bg-orange-500 fixed w-full">
+    <nav className="bg-orange-400 fixed w-full">
       <div className="container mx-auto flex justify-between items-center py-4">
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="text-white text-base font-bold">Home</a>
